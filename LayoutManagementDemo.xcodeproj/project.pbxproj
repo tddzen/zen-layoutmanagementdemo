@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		242ACDCF1822879300D05048 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242ACDCE1822879300D05048 /* HomeViewController.m */; };
+		242ACDD4182289E300D05048 /* ZENBorderLayoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 242ACDD3182289E300D05048 /* ZENBorderLayoutManager.m */; };
+		242ACDD718228A3900D05048 /* BorderLayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242ACDD618228A3900D05048 /* BorderLayoutViewController.m */; };
 		244AF599182215D900B05A24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244AF598182215D900B05A24 /* Foundation.framework */; };
 		244AF59B182215D900B05A24 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244AF59A182215D900B05A24 /* CoreGraphics.framework */; };
 		244AF59D182215D900B05A24 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244AF59C182215D900B05A24 /* UIKit.framework */; };
@@ -34,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		242ACDCD1822879300D05048 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		242ACDCE1822879300D05048 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		242ACDD2182289E300D05048 /* ZENBorderLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZENBorderLayoutManager.h; sourceTree = "<group>"; };
+		242ACDD3182289E300D05048 /* ZENBorderLayoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZENBorderLayoutManager.m; sourceTree = "<group>"; };
+		242ACDD518228A3900D05048 /* BorderLayoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BorderLayoutViewController.h; sourceTree = "<group>"; };
+		242ACDD618228A3900D05048 /* BorderLayoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BorderLayoutViewController.m; sourceTree = "<group>"; };
 		244AF595182215D900B05A24 /* LayoutManagementDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutManagementDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		244AF598182215D900B05A24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		244AF59A182215D900B05A24 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -77,6 +86,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		242ACDCC1822877300D05048 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				242ACDCD1822879300D05048 /* HomeViewController.h */,
+				242ACDCE1822879300D05048 /* HomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		242ACDD01822898100D05048 /* Border Layout */ = {
+			isa = PBXGroup;
+			children = (
+				242ACDD518228A3900D05048 /* BorderLayoutViewController.h */,
+				242ACDD618228A3900D05048 /* BorderLayoutViewController.m */,
+			);
+			name = "Border Layout";
+			path = BorderLayout;
+			sourceTree = "<group>";
+		};
+		242ACDD11822899C00D05048 /* Layout Managers */ = {
+			isa = PBXGroup;
+			children = (
+				242ACDD2182289E300D05048 /* ZENBorderLayoutManager.h */,
+				242ACDD3182289E300D05048 /* ZENBorderLayoutManager.m */,
+			);
+			name = "Layout Managers";
+			path = LayoutManagers;
+			sourceTree = "<group>";
+		};
 		244AF58C182215D900B05A24 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +184,9 @@
 		244AF5EA182216C800B05A24 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				242ACDD11822899C00D05048 /* Layout Managers */,
+				242ACDD01822898100D05048 /* Border Layout */,
+				242ACDCC1822877300D05048 /* Home */,
 				244AF5EB182216C800B05A24 /* Application */,
 			);
 			path = Source;
@@ -262,8 +303,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				244AF5F6182216C800B05A24 /* main.m in Sources */,
+				242ACDD4182289E300D05048 /* ZENBorderLayoutManager.m in Sources */,
 				244AF5F5182216C800B05A24 /* AppDelegate.m in Sources */,
 				24E4E4AC1822177A009CF287 /* RootViewController.m in Sources */,
+				242ACDD718228A3900D05048 /* BorderLayoutViewController.m in Sources */,
+				242ACDCF1822879300D05048 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
